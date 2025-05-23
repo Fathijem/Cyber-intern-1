@@ -32,3 +32,4 @@ Detect five or more failed login attempts (Event ID 4625) from the same host wit
   "query": "event.code:4625 AND winlog.event_data.IpAddress:*"
 }
 ```
+The above query is executed when multiple failed logins exceeding count of 5 are detected within 2 minutes. By analysing the logs we can find the user name and the number of attempts taken to try and bruteforce the password.

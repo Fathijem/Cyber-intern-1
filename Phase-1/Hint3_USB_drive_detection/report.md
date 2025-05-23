@@ -11,7 +11,7 @@ Detect USB drive insertions.
 - **Log Source**: Sysmon
 - **Lab Setup**: USB insertion on monitored Windows host.
 
-###cEvent ID / Data Source Mapping
+### Event ID / Data Source Mapping
 |Source|	Event ID / Field |	Description |
 |------|-------------------|--------------|
 |Sysmon|	      6          | Driver loaded|
@@ -19,5 +19,5 @@ Detect USB drive insertions.
 
 ### Detection Logic / Query
 ```dsl
-event.code:6 AND process.path:*USBSTOR*
+event.code:11 
 ```

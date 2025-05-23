@@ -20,3 +20,4 @@ Identify the use of encoded PowerShell commands.
 ```Kibana
 event.code:1 AND process.name:"powershell.exe" 
 ```
+The above query filters all processes created with the name powershell.exe. By analysing each field through Sysmon or Kibana we can find the smoch.exe has been executed and also the powershell loga for the powershell command executed.

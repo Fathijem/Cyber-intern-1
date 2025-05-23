@@ -18,5 +18,5 @@ Identify the use of encoded PowerShell commands.
 
 ### Detection Logic / Query
 ```Kibana
-event.code:1 AND process.name:"powershell.exe" AND process.command_line:*EncodedCommand*
+event.code:1 AND process.name:"powershell.exe" 
 ```

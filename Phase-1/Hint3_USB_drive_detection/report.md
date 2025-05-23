@@ -12,13 +12,13 @@ Detect USB drive insertions.
 - **Lab Setup**: USB insertion on monitored Windows host.
 
 ### Event ID / Data Source Mapping
-|Source|	Event ID / Field |	Description |
-|------|-------------------|--------------|
-|Sysmon|	      6          | Driver loaded|
-|Sysmon|	     11	         | File created |
+|Source|	Event ID / Field |	Description    |
+|------|-------------------|-----------------|
+|Sysmon|	     11	         | File created    |
+|Winlog|       6416        | Drive Detection |
 
 ### Detection Logic / Query
 ```dsl
-event.code:11 
+event.code:11 or event.code:6416
 ```
-The above query filters all the files created and by analysing the details, the file can be seen copied from USB to the Windows Machine
+The above query filters all the files created and by analysing the details, the file can be seen copied from USB to the Windows Machine. This detection combines Sysmon Event ID 11 (file creation) and Windows Event ID 6416 (Plug and Play device connection) to monitor USB activity. It helps identify when a USB device is connected and files are created or accessed, indicating potential data transfer or malware execution.

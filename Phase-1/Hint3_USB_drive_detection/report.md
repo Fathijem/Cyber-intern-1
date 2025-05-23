@@ -21,3 +21,4 @@ Detect USB drive insertions.
 ```dsl
 event.code:11 
 ```
+The above query filters all the files created and by analysing the details, the file can be seen copied from USB to the Windows Machine

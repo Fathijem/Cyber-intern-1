@@ -20,3 +20,4 @@ Detect connections to non-standard ports or suspicious IPs.
 ```dsl
 event.code:'3'
 ```
+This query uses **Sysmon Event ID 3** to detect network connections initiated by a process. It helps identify suspicious outbound connections, such as those to unusual IP addresses or non-standard ports, which may indicate data exfiltration, C2 communication, or lateral movement.

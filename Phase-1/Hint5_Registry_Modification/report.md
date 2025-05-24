@@ -19,3 +19,4 @@ Sysmon	13	Registry value set
 ```dls
 event.code:13 AND registry.path:(*\\Run\\* OR *\\RunOnce\\*)
 ```
+This query detects when a registry value is set under the Run or RunOnce keys, which are commonly used by attackers to establish persistence on a Windows system. It looks for Sysmon Event ID 13, which captures registry modifications.

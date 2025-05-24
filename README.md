@@ -10,10 +10,7 @@ Phase 1 of the SIEM Internship Program. This project establishes foundational sk
 - Detect threats using Sysmon, Winlogbeat, and Elastic SIEM.
 
 ## 🖥️ Lab Architecture
-+----------------+ +----------------+ +--------------------+
-| Windows VM | <---> | Kali Linux VM | <---> | ELK + Wazuh Server |
-| (Target) | | (Attacker) | | (SIEM/Log Storage) |
-+----------------+ +----------------+ +--------------------+
+
 
 
 

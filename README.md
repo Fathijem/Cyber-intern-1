@@ -4,7 +4,7 @@ Phase 1 of the SIEM Internship Program. This project establishes foundational sk
 
 ## 🎯 Objectives
 
-- Build and configure a SIEM lab with Elastic Stack and Wazuh.
+- Build and configure a SIEM lab with Elastic Stack.
 - Simulate 10 real-world attack techniques.
 - Forward and analyze logs from Windows and Linux systems.
 - Detect threats using Sysmon, Winlogbeat, and Elastic SIEM.
@@ -16,9 +16,9 @@ Phase 1 of the SIEM Internship Program. This project establishes foundational sk
 
 
 **Components:**
-- Windows 10 Target (Sysmon + Winlogbeat)
-- Kali Linux and Windows Attacker (Hydra, PowerShell scripts, netcat)
-- ELK Stack + Wazuh (SIEM Dashboard)
+- Windows 10 Target (Sysmon + Winlogbeat + Elastic Agent)
+- Kali Linux and Windows VM Attacker (Hydra, PowerShell scripts, netcat)
+- ELK Stack Cloud Server (SIEM Dashboard)
 
 ## ⚙️ Tools Used
 

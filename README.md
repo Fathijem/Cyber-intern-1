@@ -152,5 +152,5 @@ This phase helped me speak confidently about how threats appear in logs and how 
 ---
 
 ### 10. What was your biggest takeaway from Phase 1?
-The biggest takeaway was understanding that threat detection isn’t about catching flashy malware—it’s about recognizing subtle changes and behaviors in logs. The value of a properly configured SIEM and good log hygiene cannot be overstated.
+The biggest takeaway was understanding that threat detection isn’t about identifying huge malware—it’s about recognizing subtle changes and behaviors in logs. The value of a properly configured SIEM and good log hygiene cannot be overstated.
 
